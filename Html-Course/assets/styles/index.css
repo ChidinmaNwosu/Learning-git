@@ -1,0 +1,142 @@
+/*Element selector*/
+p {
+    color:maroon;
+    font-size:xx-large;
+}
+/**ID selector*/
+#footer-P {
+     font: size 10px;
+     color:red;
+}
+/**Class Selector*/
+.title{
+    font-size:25px;
+    font-weight:800;
+    text-decoration:underline;
+}
+html,body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+header {
+    border-bottom:1pxsolid #ddd;
+    padding:20px;
+}
+nav a {
+    margin:0 10px;
+    }
+    :root {
+        --main-bg-color: brown;
+    }
+    :root {
+        --color-1:gray;
+        --main-bg-color: brown;
+        --bg-color:#fafafa;
+        --black-2:black;
+        --border-color:red;
+    }
+
+    .grid {
+        display:grid;
+    }
+    .grid {
+        display:grid;
+        grid-template-columns: 200px 200px 200px;
+    }
+    .grid{
+        display:grid;
+        grid-template-columns: 200px 1fr 1fr;
+    }
+    /*
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: minmax(100px,auto);
+    }
+    :root {
+        --color-1:gray;
+        --background-color:#efefef;
+    }
+
+    
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: minmax(100px,auto);
+        column-gap: 10px;
+        row-gap: 15px;
+         }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap:10px;
+        row-gap: 15px;
+    }
+    */
+    .grid{
+        height:200px;
+        background-color:var(--bg-color);
+        border-radius: 10px;
+        padding:20px;
+        border: 1px solid var(--border-color);
+    }
+
+    .flex{
+        display: flex;
+        gap: 15px;
+    }
+    .flex{
+        flex: 1;
+    }
+    .flex{
+        height: 200px;
+        background-color:var(--bg-color);
+        border-radius: 10px;
+        padding:10px;
+        border: 1px solid var(--border-color);
+    /*animate your web page*/
+    }
+     .animate{
+        animation-name: slidein;
+        animation-duration:3s;
+        animation-timing-function:infinite;
+     }
+     /*keyframe**/
+     @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width:300%;
+     }
+         to {
+         margin-left: 0%;
+         width:100%;
+     }
+    }
+    /**styling on a mobile device*/
+    @media (max-width:768px){
+        .flex{
+        flex-direction:column;
+    }
+}
+/*adding another keyframe*/
+ .animate{
+    animation-name: slidein;
+    animation-duration:3s;
+ }
+ @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width:300%;
+ }
+ 75%{
+    font-size:300%;
+    margin-left: 25%;
+    width:150%;
+ }
+ to {
+     margin-left: 0%;
+     width:100%;
+ }
+}
